@@ -1,0 +1,324 @@
+/*===================================== RESPONSIVE CSS STARTS================================================*/
+@media all {
+div.wrapper, header, footer {
+	transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+}
+}
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+div.container {
+	padding: 0 2%;
+	width: 96%;
+}
+header {
+	padding:6% 0 7%;
+}
+header nav {
+	display: inline-block;
+	float:left;
+	width: 100%;
+	margin:3% 0;
+}
+header nav ul li {
+	width:100%;
+	margin:1% 0;
+}
+header nav ul li a {
+	width:88%;
+	text-align:left;
+}
+header nav ul li.dd > ul {
+	width:83%;
+}
+.mob_nav {
+	display:block;
+}
+header nav {
+	display:none;
+}
+.bx-wrapper .bx-caption {
+	display:none;
+}
+section.page {
+	padding:8% 0;
+}
+section.page blockquote {
+	padding:6%;
+	width:88%;
+}
+section.page blockquote h1 {
+	font-size:20px;
+	width:100%;
+}
+section.page blockquote p {
+	font-size:14px;
+	width:100%;
+	line-height: 1.5;
+	margin: 3% 0 0;
+}
+.view_more {
+	margin:10px auto 0;
+	float:none;
+	display:table;
+}
+.button, input[type="submit"], input[type="reset"], input[type="button"] {
+	font-size:14px;
+	padding:10px 20px;
+}
+section.set_of_4 article.block {
+	margin: 8% 2%;
+	padding: 5% 1.5%;
+	width: 92%;
+}
+section.page_alternate {
+	padding:8% 0;
+}
+section.page_alternate h1 {
+	font-size:20px;
+}
+section.page_alternate p {
+	line-height:1.5;
+}
+article.portfolio_set div.optionz ul li {
+	margin: 5px 2px;
+}
+article.portfolio_set div.mix_container ul#Grid li {
+	width:45%;
+}
+.col-4 {
+	width:96%;
+	border-bottom:1px dashed #ccc;
+}
+.col-mid {
+	width:100%;
+	border-bottom:1px dashed #ccc;
+	margin:10% 1%
+}
+ul.knob_holder li {
+	margin: 5% 2.5%;
+	width: 44.2%;
+}
+footer article.footer_col_1 {
+	width:100%;
+	margin:5% 0;
+}
+footer article.footer_listing {
+	width:40%;
+}
+}
+/* #Mobile (Landscape)
+================================================== */
+    /* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+section.set_of_4 article.block .abs {
+	left:31%;
+}
+}
+
+/* #Galaxy Tab (640px)
+================================================== */
+    /* Note: Design for a width of 640px */
+
+@media only screen and (min-width:640px) and (max-width: 767px) {
+.mob_nav {
+	margin:1%;
+}
+header {
+	padding:3% 0 5%;
+}
+header nav ul li a {
+	width:95%;
+}
+.bx-wrapper .bx-caption {
+	display:block;
+	bottom:13%;
+}
+.bx-wrapper .bx-caption span {
+	font-size:30px;
+}
+.bx-wrapper .bx-caption span.grey_text {
+	font-size:13px;
+	width:70%;
+}
+section.page blockquote {
+	padding: 3%;
+	width: 94%;
+}
+section.page blockquote h1 {
+	font-size: 20px;
+	width: 74%;
+}
+section.page blockquote p {
+	margin: 1% 0 0;
+	width: 75%;
+}
+.view_more {
+	float: right;
+	margin: -11.5% 0 0;
+}
+section.set_of_4 article.block {
+	margin: 5% 2%;
+	width: 42%;
+}
+section.set_of_4 article.block .abs {
+	left: 18%;
+}
+article.portfolio_set div.mix_container ul#Grid li {
+	width: 29%;
+}
+}
+
+/* #Tablet (Portrait)
+================================================== */
+    /* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+div.container {
+	padding:0 2%;
+	width: 96%;
+}
+header nav {
+	display: inline-block;
+	float:left;
+	width: 100%;
+	margin:3% 0;
+}
+header nav ul li {
+	width:100%;
+	margin:1% 0;
+}
+header nav ul li a {
+	width:88%;
+	text-align:left;
+}
+header nav ul li.dd > ul {
+	width:83%;
+}
+.mob_nav {
+	display:block;
+	margin:1% 2%;
+}
+header nav {
+	display:none;
+}
+header nav ul li a {
+	text-align: left;
+	width: 94%;
+}
+.bx-wrapper .bx-caption {
+	display:block;
+	bottom:13%;
+}
+.bx-wrapper .bx-caption span {
+	font-size:30px;
+}
+.bx-wrapper .bx-caption span.grey_text {
+	font-size:13px;
+	width:70%;
+}
+.view_more {
+	float: right;
+	margin: -7.5% 0 0;
+}
+.button, input[type="submit"], input[type="reset"], input[type="button"] {
+	font-size: 14px;
+	padding: 12px 25px;
+}
+section.page blockquote {
+	padding: 3%;
+	width: 94%;
+}
+section.page blockquote h1 {
+	font-size: 20px;
+	width: 74%;
+}
+section.page blockquote p {
+	margin: 1% 0 0;
+	width: 75%;
+}
+section.set_of_4 article.block {
+	margin: 5% 2%;
+	width: 42%;
+}
+section.set_of_4 article.block .abs {
+	left: 25%;
+}
+article.portfolio_set div.mix_container ul#Grid li {
+	width: 29%;
+}
+.col-4 {
+	width:98%;
+	padding:5% 0;
+}
+.col-mid {
+	width:98%;
+	padding:5% 0;
+	border-top:1px dashed #ccc;
+	border-bottom:1px dashed #ccc;
+}
+.col-4 h3 {
+	margin:0;
+}
+footer article.footer_col_1 {
+	width:100%;
+}
+footer article.footer_listing {
+	width:31%;
+}
+footer article.footer_col_1 ul {
+	margin:1% 0;
+}
+footer article.footer_col_1:first-child {
+	border-bottom:1px dashed #fff;
+	margin-bottom:3%;
+}
+footer article.footer_col_1:last-child {
+	border-top:1px dashed #fff;
+	padding-top:3%;
+}
+footer article.footer_col_1 ul li figure {
+	float:left;
+	width:14%;
+}
+footer article.footer_col_1 ul li aside {
+	width:82%;
+}
+.footer_col_1 img {
+	width:100%;
+}
+}
+
+/* #Tablet (Landscpage)
+================================================== */
+    /* Note: Design for a width of 1024px */
+
+@media only screen and (min-width:960px) and (max-width: 1200px) {
+div.container {
+	width:96%;
+	padding:0 2%;
+}
+header nav {
+	width:75%;
+}
+section.set_of_4 article.block .abs {
+	left:14%;
+}
+.footer_col_1 img {
+	width: 100%;
+}
+.view_more {
+	float: right;
+	margin: -5.5% 0 0;
+}
+.button, input[type="submit"], input[type="reset"], input[type="button"] {
+	font-size: 14px;
+	padding: 9px 20px;
+}
+}
