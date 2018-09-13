@@ -29,13 +29,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	background:transparent;
 	text-decoration:none;
 }
-/* do on responsive please */
+/* form */
 #edit-submitted-message{
-max-width: 325px;
+max-width: 625px;
 min-width: 50px;
+/*width:325px;*/
 }
 .form-text{
-max-width: 325px;
+max-width: 385px;
 min-width: 50px;
 }
 /*stop*/

@@ -9,9 +9,26 @@ div.wrapper, header, footer {
 }
 /*  #Mobile (Portrait)
 ================================================== */
-
+/*@media only handheld and (max-width: 1100px) {
+#edit-submitted-message{
+max-width: 75px;
+min-width: 45px;
+}
+.form-text{
+max-width: 85px;
+min-width: 50px;
+}*/
     /* Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 610px) {
+#edit-submitted-message{
+max-width: 258px;
+min-width: 95px;
+}
+.form-text{
+max-width: 205px;
+min-width: 100px;
+}
+
 div.container {
 	padding: 0 2%;
 	width: 96%;
@@ -116,7 +133,15 @@ footer article.footer_listing {
 ================================================== */
     /* Note: Design for a width of 480px */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 567px) {
+#edit-submitted-message{
+max-width: 175px;
+min-width: 95px;
+}
+.form-text{
+max-width: 205px;
+min-width: 100px;
+}
 section.set_of_4 article.block .abs {
 	left:31%;
 }
@@ -124,11 +149,19 @@ section.set_of_4 article.block .abs {
 
 /* #Galaxy Tab (640px)
 ================================================== */
-    /* Note: Design for a width of 640px */
+    /* Note: Design for a width of 440px */
 
-@media only screen and (min-width:640px) and (max-width: 767px) {
+@media only screen and (min-width:440px) and (max-width: 567px) {
 .mob_nav {
 	margin:1%;
+}
+#edit-submitted-message{
+max-width: 175px;
+min-width: 95px;
+}
+.form-text{
+max-width: 205px;
+min-width: 100px;
 }
 header {
 	padding:3% 0 5%;
@@ -179,7 +212,7 @@ article.portfolio_set div.mix_container ul#Grid li {
 ================================================== */
     /* Note: Design for a width of 768px */
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 608px) and (max-width: 959px) {
 div.container {
 	padding:0 2%;
 	width: 96%;
@@ -246,7 +279,9 @@ section.page blockquote p {
 section.set_of_4 article.block {
 	margin: 5% 2%;
 	width: 42%;
+        display:inline-block;
 }
+
 section.set_of_4 article.block .abs {
 	left: 25%;
 }
