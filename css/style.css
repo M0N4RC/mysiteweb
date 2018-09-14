@@ -3,14 +3,14 @@
 position:relative;
 /*display:block;*/
 min-height:365px;
-background-color:#adad85;
+background-color:#ccccb3;
 /*margin:0;
 margin-top:auto;*/
 }
 
 
 .absolute {
-  background-color:coral;
+  
   position: absolute;
   width: 150px;
   height: 350px;
@@ -31,16 +31,23 @@ margin-top:auto;*/
 #abs1 {
   top: 10px;
   left: 10px;
+  border-radius:15px;
 }
 
 #rel1 {
   top: 30px;
   margin: 0px 50px 0px 50px;
+  padding:24px;
+  height:264px;
+  border-radius:3px;
+  box-shadow:1px 3px black;
 }
 
 #abs2 {
   top: 10px;
-  right: 10px;
+  right: 64px;
+  width:8px;
+  border-radius:5px;
   background-color: #3d3d29;
 }
 #back-main{
