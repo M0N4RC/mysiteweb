@@ -10,8 +10,7 @@ margin-top:auto;*/
 }
 
 
-.absolute {
-  
+.absolute{
   position: absolute;
   width: 150px;
   height: 350px;
@@ -43,7 +42,7 @@ margin-top:auto;*/
   height:264px;
   max-height:615px;
   border-radius:3px;
-  box-shadow:1px 3px black;
+  box-shadow:2px 3px 1px 3px grey;
 }
 
 #abs2 {
@@ -73,13 +72,16 @@ height:450px;
 width:650px;
 }
 input#edit-submit.form-submit{
+
 margin:5px;
 }
 .textarea{
+border-radius:2px;
 margin:3px;
 padding:3px;
 
 }
+
 .form-item-name{
 margin:4px;
 }
@@ -103,11 +105,13 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 /* form */
 #edit-submitted-message{
+
 max-width: 625px;
 min-width: 50px;
 /*width:325px;*/
 }
 .form-text{
+/*border-radius:2px;*/
 max-width: 385px;
 min-width: 50px;
 }
@@ -123,6 +127,7 @@ background:#e8645a;
 color:black;
 border-radius:5px;
 }
+/* Liens dans le texte & links on the plain text */
 a.lin1 {box-shadow: inset 0 -4px 0 #e8645a;
        padding:1px;
        color:black;
@@ -413,7 +418,7 @@ section.page blockquote p {
 }
 .button, input[type="submit"], input[type="reset"], input[type="button"] {
 	background:#e8645a;
-	box-shadow:0 5px 0px #e2534b;
+	box-shadow:0 3px 0px #e2534b;
 	-webkit-box-shadow:0 5px 0px #e2534b;
 	-moz-box-shadow:0 5px 0px #e2534b;
 	-o-box-shadow:0 5px 0px #e2534b;
@@ -430,7 +435,7 @@ section.page blockquote p {
 }
 .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
 	background:#76c7c0;
-	box-shadow:0 5px 0 #62b9b0;
+	box-shadow:0 3px 0 #62b9b0;
 	-webkit-box-shadow:0 5px 0 #62b9b0;
 	-moz-box-shadow:0 5px 0 #62b9b0;
 	-o-box-shadow:0 5px 0 #62b9b0;
