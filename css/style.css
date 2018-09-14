@@ -1,5 +1,65 @@
 /* Main Stylesheet by <html> & get out form tag(remind)*/
+#main-comp{
+position:relative;
+display:block;
+min-height:365px;
+background-color:#adad85;
+}
 
+
+.absolute {
+  background-color:coral;
+  position: absolute;
+  width: 150px;
+  height: 350px;
+  background-color: #fdd;
+  border-color: #900;
+  /* opacity: 0.7;*/
+}
+
+.relative {
+  background-color:blue ;
+  position: relative;
+  height: 80px;
+  background-color: #cfc;
+  border-color: #696;
+  opacity: 0.7;
+}
+
+#abs1 {
+  top: 10px;
+  left: 10px;
+}
+
+#rel1 {
+  top: 30px;
+  margin: 0px 50px 0px 50px;
+}
+
+#abs2 {
+  top: 10px;
+  right: 10px;
+  background-color: #3d3d29;
+}
+#back-main{
+background-position:top;
+z-index:0;
+margin: auto;
+background-color:coral;
+height:200px;
+width:800px;}
+#main-comp-txt{
+position:relative;
+/*background-position: absolute; */
+
+z-index:1;
+/*margin-top:-70px;*/
+left:50px;
+bottom:-25px;
+background-color:grey;
+height:450px;
+width:650px;
+}
 input#edit-submit.form-submit{
 margin:5px;
 }

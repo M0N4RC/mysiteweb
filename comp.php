@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Description" content="developpement web et developpement logiciel">
-<meta name="Keywords" content="developpement web ,développeur, création logiciels,logiciel, html, css, python, java, javascript, jquery, react, developpeur, front-end, back-end, site web, sites, site internet">
+<meta name="Keywords" content="developpement web ,développeur python, création logiciels,logiciel, html, css, python, java, javascript, jquery, react, developpeur,développeur, front-end, back-end, site web, sites, site internet">
 <meta name="author" content="monarc">
 <link rel="shortcut icon" href="logo.ico">
 <link rel="icon" type="image/png" href="images/logo.png" />
@@ -14,7 +14,9 @@
 <meta property="og:title" content="Monarc développement" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://monarc.dx.am" />
-<meta property="og:image" content="http://monarc.dx.am/slide_2.jpg" />
+<meta property="og:image" content="/slide_2.jpg" />
+<meta property="og:image:height" content="500" />
+<meta property="og:image:width" content="165" />
 <meta property="og:description" content="développement web, site web et applications, logiciels" />
 <meta property="og:site_name" content="Monarc développement" />
 <title>Monarc developpement</title>
@@ -27,10 +29,10 @@
 </head>
 <body>
 <header>
-  <div class="container"> <a href="http://www.htmlustads.blogspot.in" class="logo">
+  <div class="container"> <a id="title" href="http://www.monarc.dx.am" class="logo">
     <hgroup>
       <h1>CV</h1>
-      <h3>Monarc</h3><br/><!--ajout d'un espace & to put a space charact-->&nbsp;Développement
+      <h3>Monarc</h3><br/><!--ajout d'un espace & to put a space charact=>&nbsp;-->&nbsp;Développement
     </hgroup>
     </a>
     <article class="search"> <a href="javascript:void(0);" class="search_icon"><img src="images/LOUPE.png"/></a>
@@ -41,7 +43,7 @@
     <a href="javascript:void(0);" class="mob_nav"><img src="images/menu.png"/> </a>
     <nav>
       <ul>
-        <li><a href="javascript:void(0);" class="active">Acceuil</a></li>
+        <li><a href="http://www.monarc.dx.am" class="active">Acceuil</a></li>
         <li><a href="javascript:void(0);">à propos</a></li>
         <li><a href="javascript:void(0);">Compétences</a></li>
         <li class="dd"><a href="javascript:void(0);">Portfolio </a>
@@ -53,7 +55,7 @@
         </li>
         <li><a href="javascript:void(0);">Blog</a></li>
         <li><a href="javascript:void(0);">Liens</a></li>
-        <li><a href="javascript:void(0);">me contacter</a></li>
+        <li><a href="/contact.html">me contacter</a></li>
       </ul>
     </nav>
   </div>
@@ -69,7 +71,7 @@
   <div class="container">
     <blockquote>
       <h1>Autodidacte en informatique (developpement web & logiciel)</h1>
-      <p>Bientôt quelques une de mes réalisation en ligne sur ce site. </p>
+      <p>Bientôt quelques une de mes réalisations en ligne sur ce site. </p>
       <a class="button view_more" href="#">Plus...</a> </blockquote>
     <section class="set_of_4">
       <article class="block"> <img src="images/SQL-Training.png"/>
@@ -94,7 +96,7 @@
 <section class="page_alternate">
   <div class="container">
     <h1>Monarc CV Online</h1>
-    <p>Autodicdacte en informatique Paris.</p>
+    <p>Autodicdacte en <a class="lin" href="#" title="MONTGERON 91">informatique Paris.</a></p>
     <article class="portfolio_set">
       <div class="optionz"> 
         <!-- Filter -->
@@ -175,19 +177,20 @@
 <section class="page">
   <div class="container">
     <aside class="col-4">
-      <h3>Why Choose Us?</h3>
+      <h3>Sites interressants</h3>
       <ul>
-        <li><i class="fa fa-arrow-right"></i>Quisque at massa ipsum </li>
-        <li><i class="fa fa-arrow-right"></i>Maecenas a lorem augue, egestas </li>
-        <li><i class="fa fa-arrow-right"></i>Quisque at massa ipsum </li>
-        <li><i class="fa fa-arrow-right"></i>Maecenas a lorem augue, egestas </li>
-        <li><i class="fa fa-arrow-right"></i>Quisque at massa ipsum </li>
-        <li><i class="fa fa-arrow-right"></i>Maecenas a lorem augue, egestas </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://www.openclassrooms.com" >OpenClassRooms </a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://www.developpez.com" >Developpez</a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="http://indexerror.net/">indexError </a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://open.kattis.com" >Kattis</a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://www.codecademy.com/fr" >CodeAcademy</a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://codes-sources.commentcamarche.net" >Codes Sources <span style="color:grey;">(Comment ça marche) </span></a></li>
+      
       </ul>
     </aside>
     <article class="col-mid">
 
-      <p><h2> Compteur de visiteurs.</h2></p><img src="//compteur.websiteout.com/compte.php?S='+encodeURI(window.location.hostname)+'&C=21&D=5&N=0&M=1" alt="et voilà" border="0" />
+      <p><h2> Compteur de visiteurs.</h2></p>
     <script type="text/javascript" src="//compteur.websiteout.com/js/21/5/0/1">
     </script><br/><br/>
       <ul class="knob_holder">
@@ -201,7 +204,7 @@
           <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="0">
           <strong>Centaines</strong></li>
         <li>
-          <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="3">
+          <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="10">
           <strong>Unités</strong></li>
       </ul>
     </article>
