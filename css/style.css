@@ -1,9 +1,11 @@
 /* Main Stylesheet by <html> & get out form tag(remind)*/
 #main-comp{
 position:relative;
-display:block;
+/*display:block;*/
 min-height:365px;
 background-color:#adad85;
+/*margin:0;
+margin-top:auto;*/
 }
 
 
@@ -18,10 +20,10 @@ background-color:#adad85;
 }
 
 .relative {
-  background-color:blue ;
+  background-color:grey ;
   position: relative;
   height: 80px;
-  background-color: #cfc;
+  /*background-color: #cfc;*/
   border-color: #696;
   opacity: 0.7;
 }
@@ -85,7 +87,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	border:0;
 	outline:0;
 	font-size:100%;
-	vertical-align:baseline;
+	vertical-align:top;/*évite le trais blanc en haut*/
 	background:transparent;
 	text-decoration:none;
 }
