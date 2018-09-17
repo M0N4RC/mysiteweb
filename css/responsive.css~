@@ -56,7 +56,7 @@ margin-top:auto;*/
 }
 div.container {
 	padding: 0 2%;
-	width: auto;
+	width: 96%;
 }
 header {
 	padding:6% 0 7%;

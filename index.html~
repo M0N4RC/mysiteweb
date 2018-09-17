@@ -63,9 +63,9 @@
 </header>
 <section class="banner_rotator">
   <ul class="bxslider">
-    <li><img src="images/htmlCss.png" title="HTML & CSS" data-description="<b>formation en 2015.</b>" /></li>
-    <li><img src="images/slide_2.JPG" title="Javascript" data-description="<b>Formation 2015 & autodidacte (REACT & JQUERY).</b>"  /></li>
-    <li><img src="images/PythonJAVA.png" title="Developpement logiciel" data-description="<b>JAVA (Swing)  &  PYTHON (Tkinter) ==> Autodidacte.</b>" /></li>
+    <li><img src="/images/htmlCss.png" title="HTML & CSS" data-description="<b>formation en 2015.</b>" /></li>
+    <li><img src="/images/slide_2.JPG" title="Javascript" data-description="<b>Formation 2015 & autodidacte (REACT & JQUERY).</b>"  /></li>
+    <li><img src="/images/PythonJAVA.png" title="Developpement logiciel" data-description="<b>JAVA (Swing)  &  PYTHON (Tkinter) ==> Autodidacte.</b>" /></li>
   </ul>
 </section>
 <section class="page">
