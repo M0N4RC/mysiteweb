@@ -37,8 +37,8 @@ echo "<font color=$couleur size=$taille face=$police><b>$compteur</b></font> <fo
 // On ecrit dans le fichier :
 $ab=file_put_contents($fichier, $compteur);
 //$fp2 = fopen($fichier, "a");
-/*if($ab) {echo 'oui';}
-else { echo 'non!';}*/
+if($ab) {echo 'oui';}
+else { echo 'non!';}
 
 // On ferme le fichier :
 

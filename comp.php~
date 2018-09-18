@@ -10,6 +10,7 @@
 <meta name="author" content="monarc">
 <link rel="shortcut icon" href="logo.ico">
 <link rel="icon" type="image/png" href="images/logo.png" />
+<meta name="viewport" content="width=800" />
 <!--optimisation Facebook-->
 <meta property="og:title" content="Monarc développement" />
 <meta property="og:type" content="article" />
@@ -45,7 +46,7 @@
       <ul>
         <li><a href="http://www.monarc.dx.am" class="active">Acceuil</a></li>
         <li><a href="javascript:void(0);">à propos</a></li>
-        <li><a href="javascript:void(0);">Compétences</a></li>
+        <li><a href="/comp.html">Compétences</a></li>
         <li class="dd"><a href="javascript:void(0);">Portfolio </a>
           <ul class="dd_content">
             <li><a href="#">Web Design</a></li>
@@ -59,21 +60,23 @@
       </ul>
     </nav>
   </div>
-</header>
-<section class="banner_rotator">
-  <ul class="bxslider">
-    <li><img src="images/slide_1.JPG" title="HTML & CSS" data-description="<b>formation en 2015.</b>" /></li>
-    <li><img src="images/slide_2.JPG" title="Javascript" data-description="<b>Formation 2015 & autodidacte (REACT & JQUERY).</b>"  /></li>
-    <li><img src="images/slide_3.JPG" title="Developpement logiciel" data-description="<b>JAVA (Swing)  &  PYTHON (Tkinter) ==> Autodidacte.</b>" /></li>
-  </ul>
-</section>
-<section class="page">
-  <div class="container">
-    <blockquote>
-      <h1>Autodidacte en informatique (developpement web & logiciel)</h1>
-      <p>Bientôt quelques une de mes réalisations en ligne sur ce site. </p>
-      <a class="button view_more" href="#">Plus...</a> </blockquote>
-    <section class="set_of_4">
+</header><div id="main-comp"><div id="abs1" class="absolute"></div>
+<div id="rel1" class="relative">
+  <br/><b>HTML et CSS:</b><br />
+Appris en autodidacte puis en formation en 2015 (préparation (POEC) au métier de développeur WEB.
+<br/><br/><br/><b>JAVASCRIPT:</b><br/>
+Autodidacte puis formation en 2015 je suis très interressé par les FrameWork REACT et JQUERY.
+<br/><br/><br/><b>MySQL:</b><br/>
+formation en 2015 je suis très interressé par le langage SQL ainsi que la modélisation (MERISE) ==> je manie bien les fonctions, procédures stoquées ; Je voudrai apprendre UML.
+<br/><br/><br/><b>PYTHON:</b><br/>
+Autodidacte , developpement de petit logiciels et scripts, avec base de données MySQL, avec PyQT, Tkinter.
+<br/><br/><br/><b>JAVA:</b><br/>
+Autodidacte petits logiciels avec swing(je me débrouille).
+
+<br/><br/><span style="text-align:center;color:black;"><h2>Je cherche un contrat PRO</h2></span><?php include('cont.php') ; ?>
+</div><div id="abs2" class="absolute">
+  </div>
+  <section class="set_of_4">
       <article class="block"> <img src="images/SQL-Training.png"/>
         <h3>SQL</h3>
         <p> Travail avec méthode merise et MySQL</p>
@@ -88,11 +91,9 @@
         <a href="#" class="button abs">Plus...</a> </article>
       <article class="block"> <img src="images/java.jpg"/>
         <h3>Java</h3>
-        <p> Réalisation d'application avec Swing.</p>
+        <p> Réalisation d'application avec Swing.</p></br>
         <a href="#" class="button abs">Plus...</a> </article>
-    </section>
-  </div>
-</section>
+    </section><br/><br/></div>
 <section class="page_alternate">
   <div class="container">
     <h1>Monarc CV Online</h1>

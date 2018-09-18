@@ -62,15 +62,15 @@
   </div>
 </header><div id="main-comp"><div id="abs1" class="absolute"></div>
 <div id="rel1" class="relative">
-  <b>HTML et CSS:</b><br />
+  <br/><b>HTML et CSS:</b><br />
 Appris en autodidacte puis en formation en 2015 (préparation (POEC) au métier de développeur WEB.
-<br/><br/><b>JAVASCRIPT:</b><br/>
+<br/><br/><br/><b>JAVASCRIPT:</b><br/>
 Autodidacte puis formation en 2015 je suis très interressé par les FrameWork REACT et JQUERY.
-<br/><br/><b>MySQL:</b><br/>
+<br/><br/><br/><b>MySQL:</b><br/>
 formation en 2015 je suis très interressé par le langage SQL ainsi que la modélisation (MERISE) ==> je manie bien les fonctions, procédures stoquées ; Je voudrai apprendre UML.
-<br/><br/><b>PYTHON:</b><br/>
+<br/><br/><br/><b>PYTHON:</b><br/>
 Autodidacte , developpement de petit logiciels et scripts, avec base de données MySQL, avec PyQT, Tkinter.
-<br/><br/><b>JAVA:</b><br/>
+<br/><br/><br/><b>JAVA:</b><br/>
 Autodidacte petits logiciels avec swing(je me débrouille).
 
 <br/><br/><span style="text-align:center;color:black;"><h2>Je cherche un contrat PRO</h2></span>
@@ -92,11 +92,9 @@ Autodidacte petits logiciels avec swing(je me débrouille).
         <a href="#" class="button abs">Plus...</a> </article>
       <article class="block"> <img src="images/java.jpg"/>
         <h3>Java</h3>
-        <p> Réalisation d'application avec Swing.</p>
+        <p> Réalisation d'application avec Swing.</p></br>
         <a href="#" class="button abs">Plus...</a> </article>
-    </section>
-  </div>
-</section>
+    </section></div>
 <section class="page_alternate">
   <div class="container">
     <h1>Monarc CV Online</h1>

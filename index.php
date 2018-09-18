@@ -192,7 +192,7 @@
     <article class="col-mid">
 
       <p><h2> Compteur de visiteurs.</h2></p>
-    <script type="text/javascript" src="//compteur.websiteout.com/js/21/5/0/1">
+    <?php include('cont.php'); ?>
     </script><br/><br/>
       <ul class="knob_holder">
         <li>

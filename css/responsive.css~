@@ -19,26 +19,24 @@ max-width: 85px;
 min-width: 50px;
 }*/
 
-@media all and (max-width: 1150px){
+@media all and ( max-width: 1150px){
 
 #edit-submitted-message{
-width:84%;
-max-width: 558px;
-min-width: 95px;
+   width:84%;
+   max-width: 558px;
+   min-width: 95px;
 }
 .form-text{
-width:78%;
-max-width: 405px;
-min-width: 100px;
+   width:78%;
+   max-width: 405px;
+   min-width: 100px;
 }
-#abs2{visibility:hidden;}
+#abs2{ visibility:hidden;}
 #main-comp{
-position:relative;
-display:block;
-height:auto;
-min-height:565px;
-max-height:3520px;
-background-color:#ccccb3;
+   /*position:relative;*/
+   display:block;
+   height:auto;
+   background-color:#ccccb3;
 /*margin:0;
 margin-top:auto;*/
 }
@@ -56,7 +54,7 @@ margin-top:auto;*/
 }
 div.container {
 	padding: 0 2%;
-	width: 96%;
+	width: auto;
 }
 header {
 	padding:6% 0 7%;
@@ -113,11 +111,20 @@ section.page blockquote p {
 	font-size:14px;
 	padding:10px 20px;
 }
-section.set_of_4 article.block {
+section.set_of_4  {
     height:auto;
-    top:50px;
+     /*top:30px;*/
 	margin: 8% 2%;
-	padding: 5% 1.5%;
+	padding: 5% 1.8%;
+	width: 92%;
+	background-color:#ccccb3;
+	/*padding-bottom: 30px;*/
+}
+article.block{
+    background-color:#ccccb3;
+    height:auto;
+    margin: 8% 2%;
+	padding: 15% 1.8%;
 	width: 92%;
 }
 section.page_alternate {
@@ -161,7 +168,7 @@ footer article.footer_listing {
 section.set_of_4 article.block {
 	margin: 5% 2%;
 	width: 42%;
-        display:inline-block;
+    display:inline-block;
 }
 .col-4 {
 	width:98%;
@@ -176,6 +183,15 @@ section.set_of_4 article.block {
 .col-4 h3 {
 	margin:0;
 }
+header a.logo {
+    font-size:20px;
+	float:left;
+	width:auto;
+	color:#fff;
+	display:inline-block;
+}
+header a.logo h1{font-size:42px;}
+header a.logo h3{font-size:32px;}
 }
 /* #Mobile (Landscape) don't work for the moment.
 ================================================== */
