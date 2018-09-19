@@ -205,7 +205,7 @@
           <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="0">
           <strong>Centaines</strong></li>
         <li>
-          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.'">';?><strong>Unités</strong></li>
+          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.' ">';?><strong>Unités</strong></li>
       </ul>
     </article>
 <!-- voilà ce que les clients disent!
