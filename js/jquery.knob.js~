@@ -134,7 +134,7 @@
                 this.i.each(function(k) {
                     //var $this = $(this);
                    // s.i[k] = $this;
-                    s.v[k] = $this.data('value');//.val() attr('value')
+                    this.v[k] = $this.data('value');//.val() attr('value')
 
                     $this.bind(
                         'change blur'

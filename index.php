@@ -46,8 +46,8 @@
       <ul>
         <li><a href="http://www.monarc.dx.am" class="active">Acceuil</a></li>
         <li><a href="javascript:void(0);">à propos</a></li>
-        <li><a href="/comp.html">Compétences</a></li>
-        <li class="dd"><a href="javascript:void(0);">Portfolio </a>
+        <li><a href="/comp.php">Compétences</a></li>
+        <li class="dd"><a href="javascript:void(0);"><img id="fleche" src="images/next.svg" style="height:12px;width:15px;">Portfolio </a>
           <ul class="dd_content">
             <li><a href="#">Web Design</a></li>
             <li><a href="#">App Design</a></li>
@@ -56,7 +56,7 @@
         </li>
         <li><a href="javascript:void(0);">Blog</a></li>
         <li><a href="javascript:void(0);">Liens</a></li>
-        <li><a href="/contact.html">me contacter</a></li>
+        <li><a href="/contact.php">me contacter</a></li>
       </ul>
     </nav>
   </div>
@@ -189,9 +189,7 @@
       
       </ul>
     </aside>
-    <article class="col-mid">
-
-      <p><h2> Compteur de visiteurs.</h2></p>
+    <article class="col-mid"><h2> Compteur de visiteurs.</h2><br/>
     <?php include('cont.php'); ?>
     </script><br/><br/>
       <ul class="knob_holder">
@@ -205,8 +203,8 @@
           <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="0">
           <strong>Centaines</strong></li>
         <li>
-          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.'">';?><strong>Unités</strong></li>
-      </ul>
+          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.'" id="kn1">';?><strong>Unités</strong></li>
+      </ul><br/><br/>
     </article>
 <!-- voilà ce que les clients disent!
     <aside class="col-4">
@@ -277,8 +275,8 @@
           <aside> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a> <span>13 Feb, 2014</span> </aside>
         </li>
       </ul>
-    </article>
-  </div>-->
+    </article>-->
+  </div>
 </footer>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
 <script src="js/modernizr.custom.93219.js"></script> 
@@ -290,6 +288,7 @@
 <script src="js/mix_it_up.js"></script> 
 <script>
 		$(document).ready(function(){
+		
 		  //Slider
 		  $('.bxslider').bxSlider({
 			  captions: true
@@ -304,7 +303,7 @@
 		 
 		  // Jquery Knob
 		  $('.knob').knob();
-		  
+		 
 		  //Thumbs MIx it Up
 		  $('#Grid').mixitup();
 		  

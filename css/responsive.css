@@ -191,7 +191,7 @@ header a.logo {
 	display:inline-block;
 }
 header a.logo h1{font-size:42px;}
-header a.logo h3{font-size:32px;}
+header a.logo h3{font-size:32px;box-shadow: 0 0.5px  grey;}
 }
 /* #Mobile (Landscape) don't work for the moment.
 ================================================== */

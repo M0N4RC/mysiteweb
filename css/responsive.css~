@@ -33,7 +33,7 @@ min-width: 50px;
 }
 #abs2{ visibility:hidden;}
 #main-comp{
-   /*position:relative;*/
+   position:relative;
    display:block;
    height:auto;
    background-color:#ccccb3;
@@ -190,7 +190,7 @@ header a.logo {
 	color:#fff;
 	display:inline-block;
 }
-header a.logo h1{font-size:42px;}
+header a.logo h1{font-size:42px;box-shadow: 0 0.5px  grey;}
 header a.logo h3{font-size:32px;}
 }
 /* #Mobile (Landscape) don't work for the moment.

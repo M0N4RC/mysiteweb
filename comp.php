@@ -46,8 +46,8 @@
       <ul>
         <li><a href="http://www.monarc.dx.am" class="active">Acceuil</a></li>
         <li><a href="javascript:void(0);">à propos</a></li>
-        <li><a href="/comp.html">Compétences</a></li>
-        <li class="dd"><a href="javascript:void(0);">Portfolio </a>
+        <li><a href="/comp.php">Compétences</a></li>
+        <li class="dd"><a href="javascript:void(0);"><img id="fleche" src="images/next.svg" style="height:12px;width:15px;">Portfolio </a>
           <ul class="dd_content">
             <li><a href="#">Web Design</a></li>
             <li><a href="#">App Design</a></li>
@@ -56,31 +56,28 @@
         </li>
         <li><a href="javascript:void(0);">Blog</a></li>
         <li><a href="javascript:void(0);">Liens</a></li>
-        <li><a href="/contact.html">me contacter</a></li>
+        <li><a href="/contact.php">me contacter</a></li>
       </ul>
     </nav>
   </div>
-</header>
+</header><div id="main-comp"><div id="abs1" class="absolute"></div>
+<div id="rel1" class="relative">
+  <br/><b>HTML et CSS:</b><br />
+Appris en autodidacte puis en formation en 2015 (préparation (POEC) au métier de développeur WEB.
+<br/><br/><br/><b>JAVASCRIPT:</b><br/>
+Autodidacte puis formation en 2015 je suis très interressé par les FrameWork REACT et JQUERY.
+<br/><br/><br/><b>MySQL:</b><br/>
+formation en 2015 je suis très interressé par le langage SQL ainsi que la modélisation (MERISE) ==> je manie bien les fonctions, procédures stoquées ; Je voudrai apprendre UML.
+<br/><br/><br/><b>PYTHON:</b><br/>
+Autodidacte , developpement de petit logiciels et scripts, avec base de données MySQL, avec PyQT, Tkinter.
+<br/><br/><br/><b>JAVA:</b><br/>
+Autodidacte petits logiciels avec swing(je me débrouille).
 
-<section class="page">
-  <div class="container">
-    <span id="travaux"><h3>En travaux ne fonctionne pas encore! </h3><p>Email: <a href="mailto:segurm@mail.com">segurm@mail.com</a></p></span>
-    <form class="webform" enctype="multipart/form-data" action="/" method="post"
-      id="webform-client-form-1" accept-charset="UTF-8"><div><div class="form-item-name"  id="webform-componen">
-      <label class="element-invisible" for="edit-submitted-name">Nom <span class="form-required" title="This field is required.">*&nbsp;</span></label>
- <input type="text" id="edit-submitted-name" name="submitted[name]" value="Nom" size="60" maxlength="128" class="form-text" />
-</div>
-<div class="form-item-name" id="webform-component-email">
-  <label class="element-invisible" for="edit-submitted-email">Email <span class="form-required" title="This field is required.">*</span></label>
- <input class="form-text" type="email" id="edit-submitted-email" name="submitted[email]" value="Email" size="60" />
-</div>
-<div class="textarea" id="webform-message">
-  <label class="element-invisible" for="edit-submitted-message">Message <span class="form-required" title="This field is required.">*</span></label>
- <div class="form-textarea-wrapper"><textarea id="edit-submitted-message" name="submitted[message]" onfocus="if(this.value=='Tapez (sans lui faire trop mal!) votre texte ici!'){this.value='';}" onblur="if(this.value==''){this.value='Tapez (sans lui faire trop mal!) votre texte ici!';}" cols="77" rows="5" class="form-textarea required">Tapez (sans lui faire trop mal!) votre texte ici!</textarea></div>
-</div>
-
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="ENVOYER" class="form-submit" /></div></div></form>
-    <section class="set_of_4">
+<br/><br/><span style="text-align:center;color:black;"><h2>Je cherche un contrat PRO</h2></span>
+<img src="images/Approved.png"style="float:right;margin:18px;height:85px;width:150px;"/>
+</div><div id="abs2" class="absolute">
+  </div>
+  <section class="set_of_4">
       <article class="block"> <img src="images/SQL-Training.png"/>
         <h3>SQL</h3>
         <p> Travail avec méthode merise et MySQL</p>
@@ -95,11 +92,9 @@
         <a href="#" class="button abs">Plus...</a> </article>
       <article class="block"> <img src="images/java.jpg"/>
         <h3>Java</h3>
-        <p> Réalisation d'application avec Swing.</p>
+        <p> Réalisation d'application avec Swing.</p></br>
         <a href="#" class="button abs">Plus...</a> </article>
-    </section>
-  </div>
-
+    </section><br/><br/></div>
 <section class="page_alternate">
   <div class="container">
     <h1>Monarc CV Online</h1>
@@ -184,21 +179,19 @@
 <section class="page">
   <div class="container">
     <aside class="col-4">
-     <h3>Sites interressants</h3>
+      <h3>Sites interressants</h3>
       <ul>
         <li><i class="fa fa-arrow-right"></i><a href="https://www.openclassrooms.com" >OpenClassRooms </a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="https://www.developpez.com" >Developpez</a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="http://indexerror.net/">indexError </a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="https://open.kattis.com" >Kattis</a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="https://www.codecademy.com/fr" >CodeAcademy</a> </li>
-        <li><i class="fa fa-arrow-right"></i><a href="https://codes-sources.commentcamarche.net" >Codes Sources <span style="color:grey;">(Comment ça marche) </span></a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://codes-sources.commentcamarche.net" >Codes Sources <span style="color:grey;">(Comment ça marche) </span></a></li>
       
       </ul>
     </aside>
-    <article class="col-mid">
-
-      <p><h2> Compteur de visiteurs.</h2></p>
-    <script type="text/javascript" src="//compteur.websiteout.com/js/21/5/0/1">
+    <article class="col-mid"><h2> Compteur de visiteurs.</h2><br/>
+    <?php include('cont.php'); ?>
     </script><br/><br/>
       <ul class="knob_holder">
         <li>
@@ -211,7 +204,7 @@
           <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="0">
           <strong>Centaines</strong></li>
         <li>
-          <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="10">
+          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.'" id="kn1">';?>
           <strong>Unités</strong></li>
       </ul>
     </article>
@@ -284,8 +277,8 @@
           <aside> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a> <span>13 Feb, 2014</span> </aside>
         </li>
       </ul>
-    </article>
-  </div>-->
+    </article>-->
+  </div>
 </footer>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
 <script src="js/modernizr.custom.93219.js"></script> 

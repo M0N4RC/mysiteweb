@@ -1,0 +1,8 @@
+var inputs = $('.knob'); 
+var query  = new Object();
+inputs.each(function(){
+        var id  = $(this).attr('id');
+        var value =  $(this).find("option:value").text();
+        query[id] = value;
+        console.log(query[id]);
+        }

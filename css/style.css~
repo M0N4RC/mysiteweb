@@ -7,7 +7,11 @@ src: url('fonts/Withheld_Data.woff' );
 font-weight:normal;
 font-style: normal;
 }
-
+.dd a:hover > #fleche{
+transition: all 1.32s;
+image-orientation: 90deg;
+}
+/*.dd a:hover > #fleche*/
 #main-comp{
 
 position:relative;
@@ -113,7 +117,7 @@ padding:32px;
 .page{
 width:100%;}
 */
-body{background-color:#ccccb3;}
+/*body{background-color:#ccccb3;}*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, form, dl, dt, dd, ol, ul, li, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin:0;
 	padding:0;
@@ -174,7 +178,10 @@ ul.dd_content a{
 display:inline-block;
 max-width:99%;
 }
-
+/* fleche test 2 */
+ul.dd_content:hover > #fleche {
+    image-orientation: 90deg;
+}
 ul.dd_content li:hover > a{
     background-color: #ffbb99;
 }
@@ -348,6 +355,7 @@ header nav ul li.dd > ul {
 	top:45px;
 	width: 140%;
 }
+
 header nav ul li.dd > ul:before {
 	content:url(../images/nav_top.png);
 	display:block;
@@ -421,7 +429,7 @@ section.page {
 	display:block;
 	width:100%;
 	clear:both;
-	padding:3% 0;
+	padding:0% 0;
 }
 section.page blockquote {
 	background:#ececec;
@@ -667,11 +675,13 @@ article.portfolio_set div.mix_container ul#Grid li img {
 .col-4 ul li i {
 	color:#e2534b;
 	margin-right:5px;
+	margin-bottom:2%;
 }
 .col-mid p {
 	color:#777777;
 	line-height:2em;
-	margin-bottom:5%;
+	margin-bottom:3%;
+	padding:3%;
 }
 ul.knob_holder {
 	display:block;
