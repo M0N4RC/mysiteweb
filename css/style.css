@@ -7,11 +7,16 @@ src: url('fonts/Withheld_Data.woff' );
 font-weight:normal;
 font-style: normal;
 }
-.dd a:hover > #fleche{
+.dd:hover  #fleche{
 transition: all 1.32s;
 image-orientation: 90deg;
+/*animation: rotate 2s linear infinite;*/
 }
-/*.dd a:hover > #fleche*/
+.dd ul:hover  #fleche{
+transition: all 1.32s;
+image-orientation: 90deg;
+/*animation: rotate 2s linear infinite;*/
+}
 #main-comp{
 
 position:relative;
