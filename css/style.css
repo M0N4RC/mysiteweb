@@ -7,6 +7,44 @@ src: url('fonts/Withheld_Data.woff' );
 font-weight:normal;
 font-style: normal;
 }
+.red, .brown, .green, .blue, .lightblue, .grey{
+line-height: 8px;
+}
+#links{
+display:inline-block;
+margin: 0 auto;
+text-align: center;
+vertical-align: middle;
+/*background:linear-gradient(#efe7cb, #f4f6f9);
+border: 2px solid #bfb69a;*/
+padding:4px;
+height:14.2%;
+width:14.8%;
+}
+.red{
+color:#c65743;
+font-size:9px;
+}
+.green{
+color:#549954;
+font-size:13px;
+}
+.brown{
+color:#b38600;
+font-size:14px;
+}
+.blue{
+color:#1a75ff;
+font-size:9px;
+}
+.lightblue{
+color:#5e838e;
+font-size:10px;
+}
+.grey{
+color:#9494b8;
+font-size:11px;
+}
 .dd:hover  #fleche{
 transition: all 1.32s;
 image-orientation: 90deg;
@@ -209,8 +247,29 @@ body {
 	background:#E8645A;
 	color:#fff;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
 	display:block;
+}/* enlevé footer */
+.mainFooter{
+height:285px;
+z-index:1;
+background:transparent;
+}
+footer{
+position: fixed;
+z-index: -1;
+bottom: 0;
+display:inline-block;
+	width:100%;
+	padding:5% 0;
+	background:#76c7c0;
+	color:#fff;
+}
+.mainFooter:hover > footer{
+z-index:1;
+}
+.mainFooter:hover {
+z-index:-1;
 }
 nav ul {
 	list-style:none;
@@ -755,13 +814,13 @@ ul.client_testmnl_fader li h3 {
 	font-weight:400;
 	font-size:16px;
 }
-footer {
+/*footer {
 	display:inline-block;
 	width:100%;
 	padding:5% 0;
 	background:#76c7c0;
 	color:#fff;
-}
+}*/
 footer article.footer_col_1 {
 	display: inline-block;
 	margin: 0 2%;

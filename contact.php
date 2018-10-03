@@ -28,7 +28,9 @@
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
 <link href="css/responsive.css" rel="stylesheet" />
 </head>
+
 <body>
+<?php unset($_POST);?>
 <header>
   <div class="container"> <a id="title" href="http://www.monarc.dx.am" class="logo">
     <hgroup>
@@ -61,25 +63,126 @@
     </nav>
   </div>
 </header>
-
 <section class="page">
   <div class="container">
     <span id="travaux"><h3>En travaux ne fonctionne pas encore! </h3><p>Email: <a href="mailto:segurm@mail.com">segurm@mail.com</a></p></span>
-    <form class="webform" enctype="multipart/form-data" action="/" method="post"
+    <form class="webform" action="#" enctype="multipart/form-data" method="post"
       id="webform-client-form-1" accept-charset="UTF-8"><div><div class="form-item-name"  id="webform-componen">
       <label class="element-invisible" for="edit-submitted-name">Nom <span class="form-required" title="This field is required.">*&nbsp;</span></label>
- <input type="text" id="edit-submitted-name" name="submitted[name]" value="Nom" size="60" maxlength="128" class="form-text" />
+ <input type="text" id="edit-submitted-name" name="nom" placeholder="Nom" size="60" maxlength="128" class="form-text" />
 </div>
 <div class="form-item-name" id="webform-component-email">
   <label class="element-invisible" for="edit-submitted-email">Email <span class="form-required" title="This field is required.">*</span></label>
- <input class="form-text" type="email" id="edit-submitted-email" name="submitted[email]" value="Email" size="60" />
+ <input class="form-text" pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})" type="email" id="edit-submitted-email" name="email" placeholder="Email" size="60" />
 </div>
 <div class="textarea" id="webform-message">
   <label class="element-invisible" for="edit-submitted-message">Message <span class="form-required" title="This field is required.">*</span></label>
- <div class="form-textarea-wrapper"><textarea id="edit-submitted-message" name="submitted[message]" onfocus="if(this.value=='Tapez (sans lui faire trop mal!) votre texte ici!'){this.value='';}" onblur="if(this.value==''){this.value='Tapez (sans lui faire trop mal!) votre texte ici!';}" cols="77" rows="5" class="form-textarea required">Tapez (sans lui faire trop mal!) votre texte ici!</textarea></div>
+ <div class="form-textarea-wrapper"><textarea id="edit-submitted-message" name="message" placeholder="Tapez (sans lui faire trop mal!) votre texte ici!"  cols="77" rows="5" class="form-textarea required"></textarea></div>
 </div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="envoi" value="ENVOYER" class="form-submit" /></div></div></form></div><?php
+//envoie de mail complet
+// on teste si le formulaire a été soumis
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_REQUEST['envoi'] )){
+$mail = "91marcsegur@gmail.com"; // Déclaration de l'adresse de destination.
 
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="ENVOYER" class="form-submit" /></div></div></form>
+if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
+
+{
+
+    $passage_ligne = "\r\n";
+
+}
+
+else
+
+{
+
+    $passage_ligne = "\n";
+
+}
+
+//=====Déclaration des messages au format texte et au format HTML.
+
+$message_txt = "Salut à toi, voici un e-mail envoyé par @Monarc.dx.am".$passage_ligne." ".$_POST['message']." ".$passage_ligne;
+
+$message_html = "<html><head></head><body><b>Salut à tous</b>, voici un e-mail envoyé par un <i>script PHP</i>.".$passage_ligne." ".$_POST['message']." ".$passage_ligne."</body></html>";
+
+//==========
+
+ 
+
+//=====Création de la boundary
+
+$boundary = "-----=".md5(rand());
+
+//==========
+
+ 
+
+//=====Définition du sujet.
+
+$sujet = "Hey mon ami , voilà ton adresse!";
+
+//=========
+
+ 
+
+//=====Création du header de l'e-mail.
+
+$header = "From: \"WeaponsB\"<marcsegur@monarc.dx.am>".$passage_ligne;
+
+$header.= "Reply-to: \"WeaponsB\" <".$_POST['email'].">".$passage_ligne;
+
+$header.= "MIME-Version: 1.0".$passage_ligne;
+
+$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
+
+//==========
+
+ 
+
+//=====Création du message.
+
+$message = $passage_ligne."--".$boundary.$passage_ligne;
+
+//=====Ajout du message au format texte.
+
+$message.= "Content-Type: text/plain; charset=\"ISO-8859-1\"".$passage_ligne;
+
+$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+
+$message.= $passage_ligne.$message_txt.$passage_ligne;
+
+//==========
+
+$message.= $passage_ligne."--".$boundary.$passage_ligne;
+
+//=====Ajout du message au format HTML
+
+$message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+
+$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+
+$message.= $passage_ligne.$message_html.$passage_ligne;
+
+//==========
+
+$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+
+$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+
+//==========
+
+ 
+
+//=====Envoi de l'e-mail.
+
+mail($mail,$sujet,$message,$header);
+echo"mail envoyé!! de ".$_POST['nom'];//vérifier que le mail est parti!}}
+}} else {echo "no mail sent!";}
+
+ ?>
     <section class="set_of_4">
       <article class="block"> <img src="images/SQL-Training.png"/>
         <h3>SQL</h3>
@@ -98,7 +201,7 @@
         <p> Réalisation d'application avec Swing.</p>
         <a href="#" class="button abs">Plus...</a> </article>
     </section>
-  </div>
+</div>
 
 <section class="page_alternate">
   <div class="container">
@@ -184,14 +287,14 @@
 <section class="page">
   <div class="container">
     <aside class="col-4">
-     <h3>Sites interressants</h3>
+      <h3>Sites interressants</h3>
       <ul>
         <li><i class="fa fa-arrow-right"></i><a href="https://www.openclassrooms.com" >OpenClassRooms </a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="https://www.developpez.com" >Developpez</a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="http://indexerror.net/">indexError </a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="https://open.kattis.com" >Kattis</a> </li>
         <li><i class="fa fa-arrow-right"></i><a href="https://www.codecademy.com/fr" >CodeAcademy</a> </li>
-        <li><i class="fa fa-arrow-right"></i><a href="https://codes-sources.commentcamarche.net" >Codes Sources <span style="color:grey;">(Comment ça marche) </span></a> </li>
+        <li><i class="fa fa-arrow-right"></i><a href="https://codes-sources.commentcamarche.net" >Codes Sources <span style="color:grey;">(Comment ça marche) </span></a></li>
       
       </ul>
     </aside>
@@ -209,9 +312,8 @@
           <input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="0">
           <strong>Centaines</strong></li>
         <li>
-          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.'" id="kn1">';?>
-          <strong>Unités</strong></li>
-      </ul>
+          <?php echo '<input class="knob" readonly data-angleOffset=-125 data-angleArc=250 data-fgColor="#e2534b" value="'.$compteur.'" id="kn1">';?><strong>Unités</strong></li>
+      </ul><br/><br/>
     </article>
 <!-- voilà ce que les clients disent!
     <aside class="col-4">
@@ -236,7 +338,8 @@
       </ul>
     </aside> -->
   </div>
-</section>
+</section></section>
+<div class="mainFooter" >
 <footer>
   <div class="container">
     <article class="footer_col_1"> <a href="http://www.monarc.dx.am/index.html" class="logo">
@@ -285,6 +388,7 @@
     </article>-->
   </div>
 </footer>
+</div>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
 <script src="js/modernizr.custom.93219.js"></script> 
 <!-- bxSlider Javascript file --> 

@@ -47,7 +47,7 @@
         this.$ = null; // jQuery wrapped element
         this.i = null; // mixed HTMLInputElement or array of HTMLInputElement
         this.g = null; // deprecated 2D graphics context for 'pre-rendering'
-        this.v = 123; // value ; mixed array or integer
+        this.v = 100; // value ; mixed array or integer
         this.cv = null; // change value ; not commited value
         this.x = 0; // canvas x position
         this.y = 0; // canvas y position

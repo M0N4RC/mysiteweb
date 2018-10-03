@@ -232,9 +232,10 @@ Autodidacte petits logiciels avec swing(je me débrouille).
     </aside> -->
   </div>
 </section>
+<div class="mainFooter">
 <footer>
   <div class="container">
-    <article class="footer_col_1"> <a href="http://www.monarc.dx.am/index.html" class="logo">
+    <article class="footer_col_1"> <a href="http://www.monarc.dx.am/index.php" class="logo">
       <hgroup>
         <h1>M0N4RC</h1>
         <h3>  CV en ligne</h3>
@@ -244,42 +245,9 @@ Autodidacte petits logiciels avec swing(je me débrouille).
       <p>Phone: <span>06 XX XX XX XX</span></p>
       <p>Email: <a href="mailto:segurm@mail.com">segurm@mail.com</a></p>
     </article>
-    <!-- Raccourcis et liens
-    <article class="footer_listing">
-      <h1>Company</h1>
-      <ul>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> About</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> FAQ</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> About</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> FAQ</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> About</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> FAQ</a></li>
-      </ul>
-    </article>
-    <article class="footer_listing">
-      <h1>Community</h1>
-      <ul>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> Blog</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> Forum</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> Blog</a></li>
-        <li><a href="#"><i class="fa fa-chevron-right"></i> Forum</a></li>
-      </ul>
-    </article>
-    <article class="footer_col_1">
-      <h1><i>form the</i> blog</h1>
-      <ul>
-        <li>
-          <figure> <img src="images/blog_img.png" alt="" /> </figure>
-          <aside> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a> <span>13 Feb, 2014</span> </aside>
-        </li>
-        <li>
-          <figure> <img src="images/blog_img.png" alt="" /> </figure>
-          <aside> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a> <span>13 Feb, 2014</span> </aside>
-        </li>
-      </ul>
-    </article>-->
   </div>
 </footer>
+</div>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
 <script src="js/modernizr.custom.93219.js"></script> 
 <!-- bxSlider Javascript file --> 

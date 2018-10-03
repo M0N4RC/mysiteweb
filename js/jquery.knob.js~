@@ -47,7 +47,7 @@
         this.$ = null; // jQuery wrapped element
         this.i = null; // mixed HTMLInputElement or array of HTMLInputElement
         this.g = null; // deprecated 2D graphics context for 'pre-rendering'
-        this.v = 123; // value ; mixed array or integer
+        this.v = 100; // value ; mixed array or integer
         this.cv = null; // change value ; not commited value
         this.x = 0; // canvas x position
         this.y = 0; // canvas y position
@@ -134,7 +134,7 @@
                 this.i.each(function(k) {
                     //var $this = $(this);
                    // s.i[k] = $this;
-                    this.v[k] = $this.data('value');//.val() attr('value')
+                    s.v[k] = $this.data('value');//.val() attr('value')
 
                     $this.bind(
                         'change blur'
@@ -337,7 +337,7 @@
             return this;
         };
 
-        this._mouse = function (e) {
+      /*  this._mouse = function (e) {
 
             var mouseMove = function (e) {
                 var v = s.xy2val(e.pageX, e.pageY);
@@ -423,7 +423,7 @@
             }
 
             return this;
-        };
+        };*/
 
         this._configure = function () {
 
@@ -479,7 +479,7 @@
 
     /**
      * k.Dial
-     */
+     *//*
     k.Dial = function () {
         k.o.call(this);
 
@@ -500,7 +500,7 @@
                     inline : true
                 }, this.o
             );
-        };
+        };*/
 
         this.val = function (v, triggerRelease) {
             if (null != v) {
@@ -511,7 +511,7 @@
                 ) return;*/
 
                // this.cv = this.o.stopper ? max(min(v, this.o.max), this.o.min) : v;
-                this.v = 32;
+                this.v =95;
                 this.$.val(this.v);
                 this._draw();
             } else {
@@ -681,7 +681,7 @@
                         ,'height' : ((this.w / 3) >> 0) + 'px'
                         ,'position' : 'absolute'
                         ,'vertical-align' : 'middle'
-                        ,'margin-top' : ((this.w / 3) >> 0) + 'px'
+    /*3*/             ,'margin-top' : ((this.w / 3) >> 0) + 'px'
                         ,'margin-left' : '-' + ((this.w * 3 / 4 + 2) >> 0) + 'px'
                         ,'border' : 0
                         ,'background' : 'none'
